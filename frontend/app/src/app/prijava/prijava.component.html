@@ -1,0 +1,29 @@
+<table>
+    <tr>
+        <td>Korisnicko ime:</td>
+        <td>
+            <input type='text' [(ngModel)]='kor_ime'>
+        </td>
+    </tr>
+    <tr>
+        <td>Lozinka:</td>
+        <td>
+            <input type='text' [(ngModel)]='lozinka'>
+        </td>
+    </tr>
+    <tr>
+        <td>Tip korisnika:</td>
+        <td>
+            <select name='tip' [(ngModel)]='tip'>
+                <option value='kupac'>Kupac</option>
+                <option value='radnik'>Radnik</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td colspan='2'>
+            <button (click)='prijava()'>Prijava</button>
+        </td>
+    </tr>
+</table>
+<span style='color: red'>{{greska}}</span>

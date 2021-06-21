@@ -1,0 +1,27 @@
+<select [(ngModel)]='proizvod'>
+    <option *ngFor='let proizvod of proizvodi'>{{proizvod.naziv}}</option>
+</select>
+<button (click)='izaberi()'>Izaberi</button>
+<table>
+    <tr>
+        <th>Identifikator</th>
+        <th>Ime i prezime kupca</th>
+        <th>Sadrzaj narudzbine</th>
+        <th>Datum narucivanja</th>
+        <th>Status</th>
+    </tr>
+    <tr *ngFor='let narudzbina of narudzbine' [class.prihvaceno]='prihvaceno(narudzbina)' [class.odbijeno]='odbijeno(narudzbina)'>
+        <td>{{narudzbina.idN}}</td>
+        <td>{{narudzbina.ime}} {{narudzbina.prezime}}</td>
+        <td>{{narudzbina.proizvod}}</td>
+        <td>{{narudzbina.datum}}</td>
+        <td>{{narudzbina.status}}</td>
+        <td *ngIf='neobradjeno(narudzbina)'>
+            <button (click)='prihvati(narudzbina)'>Prihvati</button>
+        </td>
+        <td *ngIf='neobradjeno(narudzbina)'>
+            <button (click)='odbij(narudzbina)'>Odbij</button>
+        </td>
+    </tr>
+</table>
+<button (click)='odjava()'>Odjavi se</button>

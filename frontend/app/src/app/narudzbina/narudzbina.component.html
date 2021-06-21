@@ -1,0 +1,7 @@
+<h3>{{proizvod}}</h3>
+Dodaci:
+<div *ngFor='let dodatak of dodaci'>
+    {{dodatak.naziv}}<input type='checkbox' [(ngModel)]='dodatak.odabran'>
+</div>
+<br>
+<button (click)='naruci()'>Naruci</button>

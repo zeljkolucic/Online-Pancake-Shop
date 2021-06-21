@@ -1,0 +1,1 @@
+{"version":3,"file":"dodatak.js","sourceRoot":"","sources":["../../src/models/dodatak.ts"],"names":[],"mappings":";;;;;AAAA,wDAAgC;AAEhC,MAAM,MAAM,GAAG,kBAAQ,CAAC,MAAM,CAAC;AAE/B,IAAI,OAAO,GAAG,IAAI,MAAM,CACpB;IACI,KAAK,EAAE;QACH,IAAI,EAAE,MAAM;KACf;CACJ,CACJ,CAAA;AAED,kBAAe,kBAAQ,CAAC,KAAK,CAAC,SAAS,EAAE,OAAO,EAAE,QAAQ,CAAC,CAAC"}
